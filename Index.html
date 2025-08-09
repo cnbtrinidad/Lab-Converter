@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>🧪 Lab Unit Converter</h1>
+        
+        <div class="form-group">
+            <label for="parameter-select">Select Lab Parameter:</label>
+            <select id="parameter-select">
+                <option value="glucose">Fasting Blood Glucose</option>
+                <option value="cholesterol">Cholesterol (Total, LDL, HDL)</option>
+                <option value="triglycerides">Triglycerides</option>
+                <option value="bun">BUN</option>
+                <option value="creatinine">Creatinine</option>
+                <option value="uric_acid">Uric Acid</option>
+                <option value="calcium">Calcium (Total/Ionized)</option>
+                <option value="phosphorus">Phosphorus</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <div class="input-field">
+                <label for="si-input">SI Units (mmol/L)</label>
+                <input type="number" id="si-input" placeholder="e.g., 5.5">
+            </div>
+            <div class="equals-sign">=</div>
+            <div class="input-field">
+                <label for="us-input">US Units (mg/dL)</label>
+                <input type="number" id="us-input" placeholder="e.g., 99.1">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
